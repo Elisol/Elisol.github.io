@@ -1,0 +1,101 @@
+/* quick reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html, body {
+  font-family: Myriad;
+}
+
+.description {
+  background-color: #c3cdd1;
+  font-family: Myriad;
+  margin: 0;
+  padding: 0; 
+}
+
+@font-face {
+    font-family: Minionpro;
+    src: url(fonts/MinionPro-Regular.otf);
+}
+@font-face {
+    font-family: Myriad;
+    src: url(fonts/MyriadPro-Regular.otf);
+}
+
+h1 {
+	font-family: Myriad;
+	color: white;
+}
+
+h2 {
+	font-family: Myriad;
+	font-size: 25px;
+	text-transform: uppercase;
+	color: white;
+}
+
+p {
+	font-size: 16px;
+	color: white;
+}
+
+/*Background map image*/
+#map {
+	width: 3600px;
+	height: 2329px;
+	position: relative;
+	background-image: url("Sword-Coast-Map_LowRes.jpg");
+	background-repeat: no-repeat;
+}
+	
+#map ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* General size of the text box*/
+#map a {
+	position: absolute;
+	width: 120px;
+	height: 30px;
+	text-indent: -1000em;
+}
+
+/*Outline of the hover box*/
+#map a:hover {
+	border: 2px solid #fff;
+}
+
+/* The locations of the towns by ID*/
+#neverwinter a {
+	top: 460px;
+	left: 1327px; 
+}
+
+/* Not currently used, for hover boxes
+* Descriptions layout + hover effect *
+.text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(10, 10, 10, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  * transition effect. not necessary *
+  transition: opacity .2s, visibility .2s;
+}
+
+.town:hover .text {
+	visibility: visible;
+	opacity: 1;
+} */
+
+
