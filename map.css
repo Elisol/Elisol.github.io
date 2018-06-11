@@ -71,6 +71,16 @@
 	left: 4102px;
 }
 
+#baldursgate a {
+	top: 4155px;
+	left: 5255px;
+}
+
+#candlekeep a {
+	top: 4700px;
+	left: 5156px;
+}
+
 /*Descriptions layout*/
 
 #description {
@@ -186,7 +196,31 @@ p {
     z-index: -1;
 }
 
+.candlekeep:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(Candlekeep.jpg); 
+    width: 100%;
+    height: 100%;
+    opacity : 0.4;
+    z-index: -1;
+}
 
+.baldursgate:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(Baldursgate.jpg); 
+    width: 100%;
+    height: 100%;
+    opacity : 0.4;
+    z-index: -1;
+}
 
 /* Not currently used, for hover boxes
 * quick reset *
