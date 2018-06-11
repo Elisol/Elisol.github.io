@@ -18,7 +18,7 @@ The whole D&D party contributes information on locations and campaign notes.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+First few versions were uploaded from local files, updates the each file are made within Github and should be traceable via the version history here.
 
 ## Authors
 
