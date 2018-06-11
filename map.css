@@ -1,53 +1,9 @@
-/* quick reset */
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-html, body {
-  font-family: Myriad;
-}
-
-.description {
-  background-color: #c3cdd1;
-  font-family: Myriad;
-  margin: 0;
-  padding: 0; 
-}
-
-@font-face {
-    font-family: Minionpro;
-    src: url(fonts/MinionPro-Regular.otf);
-}
-@font-face {
-    font-family: Myriad;
-    src: url(fonts/MyriadPro-Regular.otf);
-}
-
-h1 {
-	font-family: Myriad;
-	color: white;
-}
-
-h2 {
-	font-family: Myriad;
-	font-size: 25px;
-	text-transform: uppercase;
-	color: white;
-}
-
-p {
-	font-size: 16px;
-	color: white;
-}
-
 /*Background map image*/
 #map {
-	width: 3600px;
-	height: 2329px;
+	width: 10200px;
+	height: 6600px;
 	position: relative;
-	background-image: url("Sword-Coast-Map_LowRes.jpg");
+	background-image: url("Sword-Coast-Map_MedRes_updated.jpg");
 	background-repeat: no-repeat;
 }
 	
@@ -58,7 +14,21 @@ p {
 }
 
 /* General size of the text box*/
-#map a {
+#map .large a {
+	position: absolute;
+	width: 350px;
+	height: 80px;
+	text-indent: -1000em;
+}
+
+#map .medium a {
+	position: absolute;
+	width: 200px;
+	height: 50px;
+	text-indent: -1000em;
+}
+
+#map .small a {
 	position: absolute;
 	width: 120px;
 	height: 30px;
@@ -72,11 +42,159 @@ p {
 
 /* The locations of the towns by ID*/
 #neverwinter a {
-	top: 460px;
-	left: 1327px; 
+	top: 1313px;
+	left: 3762px; 
 }
 
+#phandalin a {
+	top: 1544px;
+	left: 4352px;
+}
+
+#thundertree a {
+	top: 1341px;
+	left: 4190px;
+}
+
+#triboar a {
+	top: 1420px;
+	left: 4753px;
+}
+
+#conyberry a {
+	top: 1378px;
+	left: 4560px;
+}
+
+#gauntlgrymn a {
+	top: 1070px;
+	left: 4102px;
+}
+
+/*Descriptions layout*/
+
+#description {
+  font-family: Myriad;
+  margin: 10px;
+  padding: 10px; 
+  color: black;
+}
+
+@font-face {
+    font-family: Minionpro;
+    src: url(fonts/MinionPro-Regular.otf);
+}
+@font-face {
+    font-family: Myriad;
+    src: url(fonts/MyriadPro-Regular.otf);
+}
+
+h1 {
+	font-size: 36px;
+	color: black;
+    font-weight: bold;
+}
+
+h2 {
+	font-size: 24px;
+	text-transform: uppercase;
+    font-weight: bold;
+}
+
+h3 {
+	font-size: 20px;
+    font-weight: bold;
+}
+
+p {
+	font-size: 16px;
+}
+
+#description a {
+	font-size: 24px;
+	text-transform: uppercase;
+    font-weight: bold;
+	color: black;
+}
+
+/*background images*/
+/*.neverwinter {
+   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(Neverwinter.jpg) repeat 0 0, url(Neverwinter.jpg) repeat 0 0;
+
+	background: -moz-linear-gradient(top, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.7) 100%), url(Neverwinter.jpg) repeat 0 0;
+
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.7)), color-stop(100%,rgba(255,255,255,0.7))), url(Neverwinter.jpg) repeat 0 0;
+
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.7) 100%), url(Neverwinter.jpg) repeat 0 0;
+
+	background: -o-linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.7) 100%), url(Neverwinter.jpg) repeat 0 0;
+
+	background: -ms-linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.7) 100%), url(Neverwinter.jpg) repeat 0 0;
+
+	background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.7) 100%), url(Neverwinter.jpg) repeat 0 0;
+}
+*/
+.neverwinter:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(Neverwinter.jpg); 
+    width: 100%;
+    height: 100%;
+    opacity : 0.3;
+    z-index: -1;
+}
+
+.phandalin:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(Phandalin.jpg); 
+    width: 100%;
+    height: 100%;
+    opacity : 0.3;
+    z-index: -1;
+}
+
+.starterarea:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(Starterarea.jpg); 
+    width: 100%;
+    height: 100%;
+    opacity : 0.3;
+    z-index: -1;
+}
+
+.gauntlgrymn:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(Gauntlgrymn.jpg); 
+    width: 100%;
+    height: 100%;
+    opacity : 0.4;
+    z-index: -1;
+}
+
+
+
 /* Not currently used, for hover boxes
+* quick reset *
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 * Descriptions layout + hover effect *
 .text {
   position: absolute;
