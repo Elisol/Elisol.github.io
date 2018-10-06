@@ -66,26 +66,24 @@
 	left: 4560px;
 }
 
+#mornbryn a {
+	top: 1238px;
+	left: 5033px;
+}
+
+#everlake a {
+	top: 1112px;
+	left: 5243px;
+}
+
+#phodiff a {
+	top: 732px;
+	left: 6465px;
+}
+
 #gauntlgrymn a {
 	top: 1070px;
 	left: 4102px;
-}
-
-#baldursgate a {
-	top: 4155px;
-	left: 5255px;
-}
-
-#candlekeep a {
-	top: 4700px;
-	left: 5156px;
-}
-
-/*Chris: Added Golden Oak coordinates*/
-
-#goldenoak a {
-	top: 3410px;
-	left: 9710px;
 }
 
 /*Descriptions layout*/
@@ -203,44 +201,42 @@ p {
     z-index: -1;
 }
 
-.candlekeep:after {
+.mornbryn:after {
     content : "";
     display: block;
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(Candlekeep.jpg); 
+    background-image: url(MornbrynsShield.jpg); 
     width: 100%;
     height: 100%;
     opacity : 0.4;
     z-index: -1;
 }
 
-.baldursgate:after {
+.everlake:after {
     content : "";
     display: block;
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(Baldursgate.jpg); 
+    background-image: url(Everlake1.jpg); 
     width: 100%;
     height: 100%;
-    opacity : 0.4;
+    opacity : 0.3;
     z-index: -1;
 }
 
-/*Chris: added Golden Oak data*/
-
-.goldenoak:after {
+.phodiff:after {
     content : "";
     display: block;
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(Goldenoak.jpg); 
+    background-image: url(Phodiff2.jpg); 
     width: 100%;
     height: 100%;
-    opacity : 0.4;
+    opacity : 0.3;
     z-index: -1;
 }
 
