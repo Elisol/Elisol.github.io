@@ -96,13 +96,6 @@
 	left: 5156px;
 }
 
-/*Chris: Added Golden Oak coordinates*/
-
-#goldenoak a {
-	top: 3410px;
-	left: 9710px;
-}
-
 /*Descriptions layout*/
 
 #description {
@@ -281,21 +274,6 @@ p {
     width: 100%;
     height: 100%;
     opacity : 0.4;
-    z-index: -1;
-}
-
-/*Chris: added Golden Oak data*/
-
-.goldenoak:after {
-    content : "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(Goldenoak.jpg); 
-    width: 100%;
-    height: 100%;
-    opacity : 0.3;
     z-index: -1;
 }
 
